@@ -6,14 +6,14 @@ const cardWrapper = document.querySelector('.places__list');
 /**
  * Функция создания карточки
  * @param name {string}
- * @param link {string}
+ * @param link {string} - URL на картинку
  * @param eventCallback {function}
  * @returns {Node}
  */
 const createCard = function (name, link, eventCallback) {
-    const cardElement = cardTemplate.cloneNode(true);
-    const cardImage = cardElement.querySelector('.card__image');
-    const cardDeleteButton = cardElement.querySelector('.card__delete-button');
+    const cardElement = cardTemplate.cloneNode(true),
+        cardImage = cardElement.querySelector('.card__image'),
+        cardDeleteButton = cardElement.querySelector('.card__delete-button');
 
     cardElement.querySelector('.card__title').textContent = name;
 
