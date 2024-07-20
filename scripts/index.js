@@ -29,9 +29,8 @@ const createCard = function (name, link, eventCallback) {
  * Удаляет карточку из DOM
  * @param {Event} evt - Объект события клика
  */
-const deleteCard = function (evt) {
-    evt.target.closest('.card').remove();
-}
+const deleteCard = evt => evt.target.closest('.card').remove();
+
 
 // Вывести карточки на страницу
 initialCards.forEach(item => {
