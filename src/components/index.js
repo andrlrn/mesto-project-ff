@@ -114,8 +114,6 @@ const handleUpdateProfile = (event) => {
             console.log(err);
         })
         .finally(() => isLoading(false, button))
-
-    closeModal(popupEditProfile);
 }
 
 popupEditProfile.addEventListener('submit', handleUpdateProfile);
